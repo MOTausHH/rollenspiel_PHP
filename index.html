@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Rollensoiel</h1>
+
+    <form action="game.php" method="POST">
+        <h3>Spieler 1</h3>
+
+            <p>
+                <lable for="p1_name">Name</lable>
+                <input id="p1_name" type="text" name="p1_name" value="Spieler 1">
+            </p>
+            <p>
+                <input id="p1_human" type="radio" name="p1_race" value="human" checked="checked">
+                <label for="p1_human">Mensch</label><br>
+                <input id="p1_ork" type="radio" name="p1_race" value="orc">
+                <label for="p1_human">Ork</label><br>
+            </p>
+
+            <p>
+                <input id="p1_strong_ring" type="radio" name="p1_ring" value="strong_ring" checked="checked">
+                <label for="p1_strong_ring">Ring der Staerke</label><br>
+                <input id="p1_lucky_ring" type="radio" name="p1_ring" value="lucky_ring">
+                <label for="p1_lucky_ring">Ring des Gluecks</label><br>
+            </p>
+        <h3>Spieler 2</h3>
+
+            <p>
+                <lable for="p2_name">Name</lable>
+                <input id="p2_name" type="text" name="p2_name" value="Spieler 2">
+            </p>
+
+            <p>
+                <input id="p2_human" type="radio" name="p2_race" value="human" checked="checked">
+                <label for="p2_human">Mensch</label><br>
+                <input id="p2_ork" type="radio" name="p2_race" value="orc">
+                <label for="ork">Ork</label><br>
+            </p>
+            <p>
+                <input id="p2_strong_ring" type="radio" name="p2_ring" value="strong_ring" checked="checked">
+                <label for="p2_strong_ring">Ring der Staerke</label><br>
+                <input id="p2_lucky_ring" type="radio" name="p2_ring" value="lucky_ring">
+                <label for="p2_lucky_ring">Ring des Gluecks</label><br>
+            </p>
+            <input type="submit" name="btnStart" value="Spiel starten">
+
+    </form>
+</body>
+</html>
