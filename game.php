@@ -44,11 +44,11 @@
 
     }
 
-    if($p1->getHealth() < 0){
+    if($p1->getHealth() <= 0){
         $info = "$p2->name hat gewonnen.";
         $end = true;
     }
-    if($p2->getHealth() < 0){
+    if($p2->getHealth() <= 0){
         $info = "$p1->name hat gewonnen.";
         $end = true;
     }
@@ -63,6 +63,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1><?php echo $p1->name ?></h1>
